@@ -9,8 +9,9 @@
   <body>
     <nav class="sidebar">
       <section class="profile-picture">
+        <img src="" alt="An Image of a young man standing in an open space">
         <p class="profile-header">Derek Hanciles
-        <img class="nav-icons" src="images/icons8-drop-down-arrow.png" alt="Drop Down Arrow">
+          <i class="fas fa-caret-down nav-icons"></i>
         </p>
       </section>
       <section class="sidebar-main">
@@ -40,7 +41,7 @@
             <i class="fas fa-file-invoice nav-icons"></i>USERS
           </li>
           <li class="nav-admin">
-            <i class="fas fa-file-invoice nav-icons"></i>LOCATIONS
+            <i class="fas fa-map-marker-alt nav-icons"></i>LOCATIONS
           </li>
           <li class="nav-admin">
             <i class="fas fa-code-branch nav-icons"></i>WORKFLOWS
@@ -75,7 +76,7 @@
       <figure class="search-boxes">
         <img class="search-icons" src=" alt="Open/Close Search Icon">
       </figure>
-      <input class="search-bar" type="text" placeholder="Search for a job, task, or resume">
+      <input  aria-label="search bar"class="search-bar" type="search" placeholder="Search for a job, task, or resume">
         <!-- add icon for magnify glass as background image add text indent to css for input -->
       <figure class="search-boxes">
         <i class="fas fa-user-plus seach-icons add-user"></i>
@@ -88,25 +89,25 @@
       </figure>
     </header>
     <section class="bio-section">
-      <div role="" class="bio">
+      <div role="container" class="bio">
         <h2>Jr. Web Developer</h2>
         <p>
-        <img class="bio-icons" src="images/icons8-location-marker-filled.png" alt="Locations Icon">
+          <i class="fas fa-map-marker-alt bio-icons"></i>
         Denver, CO
         </p>
       </div>
-      <div role="container for buttons with in the bio section" class="bio-buttons">
+      <div role="container" class="bio-buttons">
         <button class="open-button bio-button">
           <span class="status-indicator"></span>Open
         </button>
-        <button class="bio-button">
-          <i></i>
+        <button aria-controls="bio-section"class="bio-button">
+          <i class="fas fa-bookmark bio-icons"></i>
         </button>
-        <button class="bio-button">
-          <i></i>
+        <button aria-controls="bio-section"class="bio-button">
+          <i class="fas fa-pencil-alt bio-icons"></i>
         </button>
-         <button class="bio-button">
-          <i></i>
+         <button aria-controls="bio-section"class="bio-button">
+          <i class="fas fa-trash-alt bio-icons"></i>
         </button>
       </div>
     </section>
@@ -120,7 +121,7 @@
       <li class="menu-options">NOTIFICATIONS</li>
     </menu> 
     <section class="graphs-container">
-      <div role="" class="circle-graph-container">
+      <div role="container" class="circle-graph-container">
         <svg viewbox="0 0 36 36" class="circular-chart orange">
           <path class="circle-bg"
             d="M18 2.0845
@@ -159,12 +160,12 @@
         </svg>
         <p class="graph-info-left graph-summary">Total out of 5,333 Views</p>
       </div>
-      <div role="" class="bar-graph-container">
+      <div role="container" class="bar-graph-container">
        <img src="" alt=""> 
        <p class="graph-info-right graph-summary">Applicants/Day</p>
       </div>      
     </section>
-    <div role="" class="page-break">
+    <div role="container" class="page-break">
       <hr>
       <button class="collapse-button">^</button>
       <hr>
@@ -174,9 +175,8 @@
         <table>
           <thead>
             <tr>
-              <td>JOB DESCRIPTION
-                <td class="edit-button"><img src="" alt=""></td>
-              </td>
+              <td>JOB DESCRIPTION</td>
+              <td><i class="fas fa-pencil-alt job-icons"></i>Edit</td>
             </tr>
           </thead>
           <tbody>
@@ -216,32 +216,32 @@
         </table>
       </section>
       <section class="share-job">
-        <div role="" class="share-buttons-container">
+        <div role="container" class="share-buttons-container">
           <button class="share-job-button facebook-button"> 
-            <img class="job-icons" src="" alt="">Post to Facebook
+            <i class="fab fa-facebook-f job-icons" title="Facebook"></i>Post to Facebook
           </button>
           <button class="share-job-button twitter-button"> 
-            <img class="job-icons" src="" alt="">Tweet this Job
+            <i class="fab fa-twitter job-icons" title="Twitter"></i>Tweet this Job
           </button>
           <button class="share-job-button linked-button">
-            <img class="job-icons" src="" alt="">Post to Linkedin
+            <i class="fab fa-linkedin job-icons" title="Linkedin"></i>Post to Linkedin
           </button>
         </div>
-        <div role="" class="link-job-conatiner">
-          <p class="share-option"> <img src="" alt="">Link to this Job</p>
+        <div role="container" class="link-job-conatiner">
+          <p class="share-option"> <i class="fas fa-globe-africa job-icon"></i>Link to this Job</p>
           <p>Lorem ipsum dolor sit amet, nec no utamur honestatis. Omnis democritum.</p>
-          <input  class="share-job-link" type="text" placeholder="https://www.lipsum.com/feed/html">
+          <input  aria-label="Copy link to share job"class="share-job-link" type="text" placeholder="https://www.lipsum.com/feed/html">
           <button class="copy-link copy-job">Copy</button>
         </div>
-        <div role="" class="widget-container">
-          <p class="share-option"><img src="" alt=""> Use This Button Widget</p>
-          <input class="share-job-widget" type="text" 
+        <div role="container" class="widget-container">
+          <p class="share-option"><i class="fas fa-save job-icons"></i> Use This Button Widget</p>
+          <input aria-label="Copy link to share job widget"class="share-job-widget" type="text" 
               placeholder="<script type='text/java.'">
           <button class="copy-link">Copy</button>
         </div>
-        <div role="" class="resume-upload-container">
-          <p class="share-option"><img src="" alt=""> Upload Resume by Email</p>
-          <input class="share-job-link" type="text" placeholder="portillo@me.com">
+        <div role="container" class="resume-upload-container">
+          <p class="share-option"><i class="fas fa-paper-plane job-icons"></i>Upload Resume by Email</p>
+          <input aria-label="Upload resume by your email address"class="share-job-link" type="text" placeholder="portillo@me.com">
         </div>
       </section>
     </section> 
