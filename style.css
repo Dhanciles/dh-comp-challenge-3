@@ -14,9 +14,6 @@ body {
 
 .sidebar {
   background-color: #31475A; 
-  /*display: grid; */
-  /*grid-column: 1 / 2; 
-  grid-row: 1 / 5;*/
 }
 
 .sidebar section {
@@ -32,16 +29,36 @@ body {
   cursor: pointer; 
   color: #A5B6C3; 
   padding: 5px 0;
+  margin-bottom: 12px; 
+  font-size 12px; 
 }
 
 .sidebar section h3 {
   height: 1.5rem; 
+  color: #607A99; 
 }
 
 .nav-icons {
   font-size: 12px; 
   color: #A5B6C3; 
   margin-right: 1rem;
+}
+
+.box1 {
+  color: yellow;
+  
+}
+
+.box2 {
+  color: blue;   
+}
+
+.box3 {
+  color: red; 
+}
+
+.box4 {
+  color: green;
 }
 
 .profile-picture {
@@ -72,12 +89,13 @@ body {
   border-bottom: 1px solid #2e294a;
 }
 
-/* Search area */
+ /* Search area */
 
 .search-area {
   display: grid;
   grid-template-columns: 5rem 1fr 5rem 5rem 5rem; 
   border-bottom: 2px solid #F4F3F4;
+  background-color: #ffffff; 
 }
 
 .search-boxes {
@@ -98,7 +116,7 @@ body {
   border-right: 1px solid #F4F3F4;
 }
 
-/* Other Sections */
+/* Other Sections 
 
 /* Bio section */
 
@@ -154,12 +172,11 @@ body {
 /* Additional page navigation, below bio section */
 menu {
   display: flex;
-  background: none; 
   flex-direction: row; 
-  margin-top: auto;
   cursor: pointer;
-  margin-bottom: 1rem; 
-  margin-left: 2rem; 
+  background-color: #ffffff; 
+  margin: auto 0 1rem 2rem;
+
 }
 
 .menu-options {
@@ -178,13 +195,13 @@ menu {
 main {
   display: grid; 
   grid-column: 2 / 5; 
+  background-color: #ECF2F6; 
 }
 
 /* Circular and bar graph section */
 .graphs-container {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  background-color: #ECF2F6; 
 }
 
 .circle-graph-container {
@@ -203,8 +220,8 @@ main {
 
 .graph-summary {
   text-align: center;
-  height: 2rem;
   margin: auto;
+  padding: 10px;
   border-radius: 20px;
   background-color: #FFFFFF;
 }
@@ -269,7 +286,6 @@ main {
   display: grid; 
   grid-template-columns: 1fr 2rem 1fr;
   margin: 1rem 0;
-  background-color: #ECF2F6; 
 }
 
 hr {
@@ -287,7 +303,6 @@ hr {
 .job-info-area {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  background-color: #ECF2F6;  
 }
 
 .job-description {
