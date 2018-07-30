@@ -175,9 +175,10 @@ main {
   display: grid; 
   grid-column: 2 / 5; 
 }
+
 /* Circular and bar graph section */
 .graphs-container {
-  grid-template-columns: 2, 1fr; 
+  grid-template-columns: 1fr 1fr; 
 }
 
 .circle-graph-container {
@@ -195,14 +196,14 @@ main {
 }
 
 .graph-summary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 2rem;
-    margin: auto;
-    border-radius: 20px;
-    background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2rem;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #FFFFFF;
 }
 
 .circular-chart {
@@ -256,6 +257,7 @@ main {
 
 /* All grids */
 .page-break {
+  display: grid; 
   grid-template-columns: 1fr 2rem 1fr;
   margin: 1rem 0;
 }
@@ -269,14 +271,69 @@ hr {
   border-radius: 50px;
 }
 
+
+/* Job description area */
+
 .job-info-area {
-  grid-template-columns: repeat(2, 1fr);
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
 }
 
+.job-description {
+  padding: 20px;
+}
 
+.job-icons {
+  font-size: 12px;
+}
 
+table {
+  border-collapse: collapse;
+  background-color: #ffffff; 
+}
 
+td {
+  border: 2px solid gray;
+  border-left: none; 
+  border-right: none;
+  padding: 1rem 1rem;
+}
 
+thead {
+  background-color: #707E94; 
+  color: #FFFFFF;
+}
 
+.share-job {
+  display: flex; 
+  flex-direction: column; 
+  margin: 0 auto;
+  padding: 20px;
+}
 
+.share-job-button {
+  color: #ffffff;
+  height: 3.5rem;
+  width: 100%;
+}
 
+.link-job-container input {
+
+}
+
+.copy-link {
+  width: 5rem;
+  background-color: #4FBAC2;
+}
+
+.facebook-button {
+  background-color: #4C71BE;
+}
+
+.twitter-button {
+  background-color: #4FBDEE;
+}
+
+.linkedin-button {
+  background-color: #1580B9;
+}
