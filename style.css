@@ -48,8 +48,60 @@ body {
 
 
 /* Other Sections */
+
+/* Circular and bar graph section */
 .graphs-container {
   grid-template-columns: repeat(2, 1fr); 
+}
+
+.flex-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin-right: 0; 
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 }
 
 .job-info-area {
