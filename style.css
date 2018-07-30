@@ -36,6 +36,7 @@ body {
 .sidebar section h3 {
   height: 1.5rem; 
   color: #607A99; 
+  margin-bottom: 10px;
 }
 
 .nav-icons {
@@ -74,11 +75,16 @@ body {
   border-radius: 50% 50%;
   height: 5rem;
   width: 5rem;
-  margin-left: 3.5rem; 
+  margin-left: 2rem; 
+  margin-bottom: 1rem
 }
 
 .profile-header {
-  margin-left: 2rem;
+  margin-left: 10px; 
+}
+
+.header-icon {
+  font-size: 16px; 
 }
 
 .sidebar-main {
