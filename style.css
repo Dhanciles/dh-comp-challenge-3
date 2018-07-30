@@ -111,18 +111,39 @@ body {
   align-items: center;
   height: 80px;
   width: 80px;
+  cursor: pointer; 
 }
 
-.searh-icons {
+.search-boxes:hover {
+  background-color: #4FBDEE;
+}
+
+.search-icons:hover {
+  color: #ffffff; 
+}
+
+.search-icons {
   font-size: 20px; 
+  color: #A5B6C3; 
 }
 
+.search-bar {
+  text-indent: 2rem;
+  border: none; 
+}
+
+.left-fig {
+  border-right: 1px solid #F4F3F4;
+}
+
+.add-user-fig {
+  border-left: 1px solid #F4F3F4; 
+}
 .middle-fig {
   border-left: 1px solid #F4F3F4; 
   border-right: 1px solid #F4F3F4;
 }
 
-/* Other Sections 
 
 /* Bio section */
 
@@ -181,7 +202,7 @@ menu {
   flex-direction: row; 
   cursor: pointer;
   background-color: #ffffff; 
-  margin: auto 0 1rem 2rem;
+  padding-left: 2rem; 
 
 }
 
@@ -191,6 +212,7 @@ menu {
   cursor: pointer;
   margin-right: 2rem;
   font-size: 18px;
+  border-bottom: 2px solid transparent;
 }
 
 .menu-options:hover {
