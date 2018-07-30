@@ -75,13 +75,79 @@ body {
   border-bottom: 2px solid #F4F3F4;
 }
 
-.search-boxes
+.search-boxes {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+}
+
+.searh-icons {
+  font-size: 20px; 
+}
+
+.middle-fig {
+  border-left: 1px solid #F4F3F4; 
+  border-right: 1px solid #F4F3F4;
+}
 
 /* Other Sections */
 
+/* Bio section */
+
+.bio-section {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+  background-color: #ffffff; 
+}
+
+.bio {
+  display: flex; 
+  flex-direction: column;
+}
+
+.bio-buttons {
+  display: flex; 
+  align-items: center; 
+}
+
+.bio-buttons button {
+  height: 40px;
+  margin-left: 1rem;
+}
+
+.bio-button {
+  display: flex; 
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.open-button {
+  display: flex;
+  align-items: center; 
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 1rem;
+}
+
+.staus-indicator {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: green;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+
+}
+
+
+
 /* Circular and bar graph section */
 .graphs-container {
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: 2, 1fr; 
 }
 
 .flex-wrapper {
@@ -132,6 +198,26 @@ body {
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
+}
+
+.bar-graph-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+/* All grids */
+.page-break {
+  grid-template-columns: 1fr 2rem 1fr;
+  margin: 1rem 0;
+}
+
+hr {
+  font-size: 1rem;
+  width: 90%;
+}
+
+.collapse-button {
+  border-radius: 50px;
 }
 
 .job-info-area {
