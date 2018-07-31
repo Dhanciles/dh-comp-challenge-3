@@ -33,6 +33,14 @@ body {
   font-size 12px; 
 }
 
+.sidebar section ul li:hover {
+  color: #ffffff; 
+}
+
+.nav-icons:hover {
+  color: #ffffff;
+}
+
 .sidebar section h3 {
   height: 1.5rem; 
   color: #607A99; 
@@ -43,6 +51,7 @@ body {
   font-size: 12px; 
   color: #A5B6C3; 
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .box1 {
@@ -95,7 +104,7 @@ body {
   border-bottom: 1px solid #2e294a;
 }
 
- /* Search area */
+ /* Search area 
 
 .search-area {
   display: grid;
