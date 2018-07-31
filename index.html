@@ -10,10 +10,9 @@
   <body>
     <nav class="sidebar">
       <section class="profile-picture">
-        <div class="progile-image"></div>
-        <!-- <img src="images/derek-shadow.gif" alt="An Image of a young man standing in an open space"> -->
+        <div class="profile-image"></div>
         <p class="profile-header">Derek Hanciles
-          <i class="fas fa-caret-down nav-icons"></i>
+          <i class="fas fa-caret-down nav-icons header-icon"></i>
         </p>
       </section>
       <section class="sidebar-main">
@@ -60,7 +59,7 @@
         <h3>Categories</h3>
         <ul>
           <li class="nav-categories">
-            <i class="fas fa-check-square box1"></i></i>Administrative
+            <i class="fas fa-check-square  nav-icons box1"></i></i>Administrative
           </li>
           <li class="nav-categories">
             <i class="fas fa-square nav-icons box2"></i>Design
@@ -76,13 +75,13 @@
     </nav>
     <main>
       <header class="search-area">
-        <figure class="search-boxes">
+        <figure class="search-boxes left-fig">
          <i class="fas fa-bars search-icons nav-expand"></i>
         </figure>
-        <input  aria-label="search bar"class="search-bar" type="search" placeholder="Search for a job, task, or resume">
+        <input  aria-label="search bar" class="search-bar" type="search" placeholder="Search for a job, task, or resume">
         <!-- add icon for magnify glass as background image add text indent to css for input -->
-        <figure class="search-boxes">
-          <i class="fas fa-user-plus seach-icons add-user"></i>
+        <figure class="search-boxes add-user-fig">
+          <i class="fas fa-user-plus search-icons add-user"></i>
         </figure>
         <figure class="search-boxes middle-fig">
           <i class="fas fa-calendar-plus search-icons add-to-calendar"></i>
@@ -161,17 +160,15 @@
             a 15.9155 15.9155 0 0 1 0 -31.831"/>
             <text x="18" y="20.35" class="percentage">90%</text>
           </svg>
-          <p class="graph-info-left graph-summary">Total out of 5,333 Views</p>
         </div>
         <div role="container" class="bar-graph-container">
           <img src="images/bar-graph.png" alt="A bar graph used to represent the amount of interviews and applicants over a two week period"> 
-          <p class="graph-info-right graph-summary">Applicants/Day</p>
         </div>      
+        <p class="graph-info-left graph-summary">Total out of 5,333 Views</p>
+        <p class="graph-info-right graph-summary">Applicants/Day</p>
       </section>
       <div role="container" class="page-break">
-        <hr>
-        <button class="collapse-button">^</button>
-        <hr>
+        <hr><button class="collapse-button">^</button><hr>
       </div>
       <section class="job-info-area">
         <section class="job-description">
@@ -226,8 +223,8 @@
             <button class="share-job-button twitter-button"> 
               <i class="fab fa-twitter job-icons" title="Twitter"></i>Tweet this Job
             </button>
-            <button class="share-job-button linked-button">
-              <i class="fab fa-linkedin job-icons" title="Linkedin"></i>Post to Linkedinb
+            <button class="share-job-button linkedin-button">
+              <i class="fab fa-linkedin job-icons" title="Linkedin"></i>Post to Linkedin
             </button>
           </div>
           <div role="container" class="link-job-conatiner">

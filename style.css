@@ -27,16 +27,48 @@ body {
 .sidebar section ul li {
   list-style: none; 
   cursor: pointer; 
+  color: #A5B6C3; 
+  padding: 5px 0;
+  margin-bottom: 12px; 
+  font-size 12px; 
+}
+
+.sidebar section ul li:hover {
+  color: #ffffff; 
+}
+
+.nav-icons:hover {
+  color: #ffffff;
 }
 
 .sidebar section h3 {
   height: 1.5rem; 
+  color: #607A99; 
+  margin-bottom: 10px;
 }
 
 .nav-icons {
   font-size: 12px; 
   color: #A5B6C3; 
   margin-right: 1rem;
+  cursor: pointer;
+}
+
+.box1 {
+  color: yellow;
+  
+}
+
+.box2 {
+  color: blue;   
+}
+
+.box3 {
+  color: red; 
+}
+
+.box4 {
+  color: green;
 }
 
 .profile-picture {
@@ -52,11 +84,16 @@ body {
   border-radius: 50% 50%;
   height: 5rem;
   width: 5rem;
-  margin-left: 3.5rem; 
+  margin-left: 2rem; 
+  margin-bottom: 1rem
 }
 
 .profile-header {
-  margin-left: 2rem;
+  margin-left: 10px; 
+}
+
+.header-icon {
+  font-size: 16px; 
 }
 
 .sidebar-main {
@@ -67,34 +104,170 @@ body {
   border-bottom: 1px solid #2e294a;
 }
 
-/* Search area */
+ /* Search area 
 
 .search-area {
   display: grid;
   grid-template-columns: 5rem 1fr 5rem 5rem 5rem; 
   border-bottom: 2px solid #F4F3F4;
+  background-color: #ffffff; 
 }
 
-.search-boxes
+.search-boxes {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  cursor: pointer; 
+}
 
-/* Other Sections */
+.search-boxes:hover {
+  background-color: #4FBDEE;
+}
+
+.search-icons:hover {
+  color: #ffffff; 
+}
+
+.search-icons {
+  font-size: 20px; 
+  color: #A5B6C3; 
+}
+
+.search-bar {
+  text-indent: 2rem;
+  border: none; 
+}
+
+.left-fig {
+  border-right: 1px solid #F4F3F4;
+}
+
+.add-user-fig {
+  border-left: 1px solid #F4F3F4; 
+}
+.middle-fig {
+  border-left: 1px solid #F4F3F4; 
+  border-right: 1px solid #F4F3F4;
+}
+
+
+/* Bio section */
+
+.bio-section {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+  background-color: #ffffff; 
+}
+
+.bio {
+  display: flex; 
+  flex-direction: column;
+}
+
+.bio-buttons {
+  display: flex; 
+  align-items: center; 
+}
+
+.bio-buttons button {
+  height: 40px;
+  margin-left: 1rem;
+}
+
+.bio-button {
+  display: flex; 
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.open-button {
+  display: flex;
+  align-items: center; 
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 1rem;
+}
+
+.status-indicator {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: green;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.bio-icons {
+  font-size: 18px;
+}
+
+/* Additional page navigation, below bio section */
+menu {
+  display: flex;
+  flex-direction: row; 
+  cursor: pointer;
+  background-color: #ffffff; 
+  padding-left: 2rem; 
+
+}
+
+.menu-options {
+  list-style: none; 
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-options:hover {
+  border-bottom: 2px solid #4FBDEE;
+}
+
+/* Grid for page's main content */
+main {
+  display: grid; 
+  grid-column: 2 / 5; 
+  background-color: #ECF2F6; 
+}
 
 /* Circular and bar graph section */
 .graphs-container {
-  grid-template-columns: repeat(2, 1fr); 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
 }
 
-.flex-wrapper {
+.circle-graph-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   margin-right: 0; 
 }
 
+.grap-info-left {
+  width: 14rem;
+}
+
+.graph-info-right {
+  width: 10rem;
+}
+
+.graph-summary {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
 .circular-chart {
-  display: block;
+  display: block; 
   margin: 10px auto;
-  max-width: 80%;
-  max-height: 250px;
+  width: 10rem; 
+  height: auto;
 }
 
 .circle-bg {
@@ -134,14 +307,113 @@ body {
   text-anchor: middle;
 }
 
-.job-info-area {
-  grid-template-columns: repeat(2, 1fr);
+.bar-graph-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.bar-graph-container img {
+  width: 20rem;
+  height: auto; 
+}
+
+/* Page Break Section */
+.page-break {
+  display: grid; 
+  grid-template-columns: 1fr 2rem 1fr;
+  margin: 1rem 0;
+}
+
+hr {
+  font-size: 1rem;
+  width: 90%;
+}
+
+.collapse-button {
+  border-radius: 50px;
 }
 
 
+/* Job description area */
 
+.job-info-area {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}
 
+.job-description {
+  padding: 20px;
+}
 
+.job-icons {
+  font-size: 12px;
+}
 
+table {
+  border-collapse: collapse;
+  background-color: #ffffff; 
+}
 
+td {
+  border: 2px solid gray;
+  border-left: none; 
+  border-right: none;
+  padding: 1rem 1rem;
+}
 
+thead {
+  background-color: #707E94; 
+  color: #FFFFFF;
+}
+
+.share-job {
+  display: flex; 
+  flex-direction: column; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.share-job-button {
+  color: #ffffff;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.link-job-container input {
+  flex-grow: 1;
+}
+
+.copy-link {
+  width: 5rem;
+  background-color: #4FBAC2;
+}
+
+.facebook-button {
+  background-color: #4C71BE;
+}
+
+.twitter-button {
+  background-color: #4FBDEE;
+}
+
+.linkedin-button {
+  background-color: #1580B9;
+}
+
+/* Media Queries */
+
+@media /*screen and*/(max-width: 1100px) {
+  .graphs-container {
+    display: grid; 
+    grid-template-columns: 1fr;
+    background-color: #000000;  
+  }
+}
+
+@media (max-width: 700px) {
+  .job-info-area {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    background-color: #000000;  
+}
