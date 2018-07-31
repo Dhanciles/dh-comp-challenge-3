@@ -272,17 +272,17 @@ menu {
   display: flex;
   flex-direction: row; 
   cursor: pointer;
-  background-color: #ffffff; 
-  padding-left: 2rem; 
-
+  /*background-color: #ffffff; */
+  padding-left: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
 .menu-options {
   list-style: none; 
   border: none;
   cursor: pointer;
-  margin-right: 2rem;
-  font-size: 18px;
+  margin-right: 5rem;
+  font-size: 12px;
   border-bottom: 2px solid transparent;
 }
 
