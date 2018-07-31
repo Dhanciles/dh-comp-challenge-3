@@ -402,7 +402,7 @@ hr {
 }
 
 
- /* Job description area */
+ /* Job description table */
 
 .job-container {
   display: flex;
@@ -435,19 +435,38 @@ thead {
   color: #FFFFFF;
 }
 
+/* Social media and links to share job information */
+
 .share-job {
   display: flex; 
   flex-direction: column; 
+  justify-content: space-around;
   margin: 0 auto;
   padding: 20px;
 }
 
-.share-job-button {
+.social-buttons-conatainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-button {
   color: #ffffff;
   height: 3.5rem;
   width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
+.social-icons {
+  font-size: 12px;
+  color: #ffffff; 
+  margin-right: 2rem; 
+}
+
+.fa-twitter {
+  margin-right: 2.5rem; 
+}
 .link-job-container input {
   flex-grow: 1;
 }
