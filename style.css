@@ -5,14 +5,21 @@
 }
 
 body {
-  display: grid; 
-  grid-template-columns: 15rem, 1fr; 
+  /*display: grid; 
+  grid-template-columns: 15rem, 1fr; */
   font-family: 'Open Sans', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  height: 100%;
+  width: 100%; 
 }
 
 /* Navigation side bar */
 
 .sidebar {
+  width: 15rem; 
   background-color: #31475A; 
 }
 
@@ -104,7 +111,7 @@ body {
   border-bottom: 1px solid #2e294a;
 }
 
- /* Search area 
+  Search area 
 
 .search-area {
   display: grid;
@@ -154,7 +161,7 @@ body {
 }
 
 
-/* Bio section */
+ Bio section 
 
 .bio-section {
   display: flex;
@@ -205,7 +212,7 @@ body {
   font-size: 18px;
 }
 
-/* Additional page navigation, below bio section */
+ Additional page navigation, below bio section 
 menu {
   display: flex;
   flex-direction: row; 
@@ -228,14 +235,14 @@ menu {
   border-bottom: 2px solid #4FBDEE;
 }
 
-/* Grid for page's main content */
+ Grid for page's main content 
 main {
   display: grid; 
   grid-column: 2 / 5; 
   background-color: #ECF2F6; 
 }
 
-/* Circular and bar graph section */
+ Circular and bar graph section 
 .graphs-container {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
@@ -318,7 +325,7 @@ main {
   height: auto; 
 }
 
-/* Page Break Section */
+ Page Break Section 
 .page-break {
   display: grid; 
   grid-template-columns: 1fr 2rem 1fr;
@@ -335,7 +342,7 @@ hr {
 }
 
 
-/* Job description area */
+ Job description area 
 
 .job-info-area {
   display: grid; 
@@ -401,9 +408,9 @@ thead {
   background-color: #1580B9;
 }
 
-/* Media Queries */
+ /*Media Queries */
 
-@media /*screen and*/(max-width: 1100px) {
+@media screen and(max-width: 1100px) {
   .graphs-container {
     display: grid; 
     grid-template-columns: 1fr;
