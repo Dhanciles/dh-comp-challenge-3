@@ -136,7 +136,7 @@ header {
   flex-direction: row; 
   border-bottom: 2px solid #F4F3F4;
   background-color: #ffffff; 
-  background-image: #fff url("images/search.svg") no-repeat;
+  background-image: #fff url('images/search.svg') no-repeat;
   height: 1.7rem;
   flex: 1 0;
   margin: 0 1rem 1rem 1rem;
@@ -144,6 +144,7 @@ header {
   min-width: 2rem;
   width: 100%;
   text-indent: 2rem;
+  font-size: 16px; 
 }
 
 .search-boxes {
@@ -191,7 +192,8 @@ header {
 
 .bio-section {
   display: flex;
-  flex-direction: column; 
+  justify-content: space-between;
+  /*flex-direction: column;*/ 
   padding: 20px;
   background-color: #ffffff; 
 }
@@ -199,6 +201,28 @@ header {
 .bio {
   display: flex; 
   flex-direction: column;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.location {
+  font-size: 18px; 
+  margin-top: 10px; 
+  color: #A5B6C3;
+}
+
+.bullet-point {
+  content: "\2022";
+  font-size: 8px; 
+}
+
+.preview {
+  font-size: 12px; 
+  color: #4FBDEE;
+  cursor: pointer; 
+  margin-left: 5px; 
 }
 
 .bio-buttons {
@@ -209,6 +233,8 @@ header {
 .bio-buttons button {
   height: 40px;
   margin-left: 1rem;
+  cursor: pointer; 
+
 }
 
 .bio-button {
@@ -223,6 +249,7 @@ header {
   height: 40px;
   border-radius: 20px;
   padding: 0 1rem;
+  color: #A5B6C3;
 }
 
 .status-indicator {
@@ -235,7 +262,8 @@ header {
 }
 
 .bio-icons {
-  font-size: 18px;
+  font-size: 16px;
+  color: #A5B6C3;
 }
 
  /* Additional page navigation, below bio section */
