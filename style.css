@@ -149,11 +149,10 @@ header {
 
 .search-boxes {
   display: flex;
-  /*justify-content: center;*/
-  margin: 0;
   align-items: center;
-  cursor: pointer; 
+  margin: 0;
   width: 5rem; 
+  cursor: pointer; 
 }
 
 .search-boxes:hover {
@@ -272,7 +271,6 @@ menu {
   display: flex;
   flex-direction: row; 
   cursor: pointer;
-  /*background-color: #ffffff; */
   padding-left: 1.5rem; 
   margin-bottom: 1.5rem;
 }
@@ -298,10 +296,16 @@ main {
 
  /*Circular and bar graph section */
 .graphs-container { 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
 }
 
 .circle-graph-container { 
+  display: flex; 
+  flex-direction: row; 
   margin-right: 0; 
+  /*width: 50%;*/
 }
 
 .grap-info-left {
@@ -313,6 +317,7 @@ main {
 }
 
 .graph-summary {
+  display: flex;
   text-align: center;
   margin: auto;
   padding: 10px;
@@ -320,8 +325,14 @@ main {
   background-color: #FFFFFF;
 }
 
+.circle-container {
+  display: flex;
+  flex-direction: column; 
+}
+
 .circular-chart {
-  display: block; 
+  display: flex;
+  flex-direction: row;
   margin: 10px auto;
   width: 10rem; 
   height: auto;
@@ -364,20 +375,19 @@ main {
   text-anchor: middle;
 }
 
-.bar-graph-container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-}
+
 
 .bar-graph-container img {
-  width: 20rem;
+  width: 20rem; 
   height: auto; 
 }
 
  /* Page Break Section */
+
 .page-break {
-  margin: 1rem 0;
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 hr {
@@ -387,12 +397,17 @@ hr {
 
 .collapse-button {
   border-radius: 50px;
+  margin: 0 1rem;
+  cursor: pointer;
 }
 
 
  /* Job description area */
 
-.job-info-area {
+.job-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
 }
 
 .job-description {
