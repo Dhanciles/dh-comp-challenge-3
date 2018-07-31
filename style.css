@@ -118,7 +118,6 @@ body {
   border-bottom: 1px solid #2e294a;
 }
 
-
 /* Search area */
 
 header {
@@ -137,23 +136,23 @@ header {
   flex-direction: row; 
   border-bottom: 2px solid #F4F3F4;
   background-color: #ffffff; 
-  /* background: #fff url(images/search.svg) no-repeat;*/
-  border: 0;
+  background-image: #fff url("images/search.svg") no-repeat;
   height: 1.7rem;
   flex: 1 0;
   margin: 0 1rem 1rem 1rem;
   outline: 0;
   min-width: 2rem;
   width: 100%;
-  text-indent: 1.6rem;
+  text-indent: 2rem;
 }
 
 .search-boxes {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   margin: 0;
   align-items: center;
   cursor: pointer; 
+  width: 5rem; 
 }
 
 .search-boxes:hover {
@@ -169,7 +168,8 @@ header {
   color: #A5B6C3; 
 }
 
-.search-bar {
+.search-input {
+  width: 80%;
   text-indent: 2rem;
   border: none; 
 }
