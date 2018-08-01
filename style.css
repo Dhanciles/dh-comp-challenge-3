@@ -156,14 +156,13 @@ header {
   outline: 0;
   min-width: 2rem;
   width: 100%;
-  text-indent: 2rem;
+  text-indent: 1.75rem;
   font-size: 16px; 
 }
 
 .search-boxes {
   display: flex;
   align-items: center;
-  margin: 0;
   flex: 0.5; 
   cursor: pointer; 
 }
@@ -177,7 +176,7 @@ header {
 }
 
 .search-icons {
-  font-size: 20px; 
+  font-size: 1.5rem; 
   color: #A5B6C3; 
 }
 
@@ -557,8 +556,32 @@ main {
 
  /*Media Queries */
 
-@media screen and(max-width: 1100px) {
-  
+ @media (max-width: 1390px) {
+    .search-area {
+      text-indent: 0.75rem; 
+    }
+ }
+
+@media (max-width: 825px) {
+  .profile-header {
+    margin: 0;
+
+  }
+
+  .profile-picture {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .profile-image {
+    margin-left: 1rem; 
+    margin-bottom: 0.5rem; 
+  }
+
+  .search-area {
+      font-size: 14px; 
+  }
+
 }
 
 @media (max-width: 650px) {
