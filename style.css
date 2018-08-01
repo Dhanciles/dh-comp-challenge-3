@@ -199,8 +199,11 @@ header {
   text-indent: 2rem;
   flex: 3;
   border: none; 
-  background: #ffffff url('images/search.svg') no-repeat center left ;
+  background: #ffffff url('images/search.svg') no-repeat center left;
+}
 
+input::placeholder {
+  font-size: 16px; 
 }
 
  /* Bio section */
@@ -313,6 +316,7 @@ menu {
 
 main {
   background-color: #ECF2F6; 
+  width: 100%
 }
 
   /*Circular and bar graph section */
@@ -442,7 +446,8 @@ main {
   background-color: #ffffff;
   height: 100%;
   width: 100%; 
-  margin-left: 3rem; 
+  margin-left: 1rem;
+  margin-top: 1rem;  
 }
 
 .column {
@@ -463,6 +468,7 @@ main {
 
 .job-icons {
   font-size: 12px;
+  margin-right: 3px;
 }
 
 .edit-button {
@@ -532,6 +538,11 @@ main {
 
 .footer-bottom {
   border-bottom: 1px solid gray; 
+}
+
+.link-text {
+  font-size: 10px; 
+  color: #AEB6BD; 
 }
 
 
@@ -609,6 +620,48 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-right: 1rem; 
 }
-       
+
+  .search-area {
+    text-indent: 0.5rem; 
+  }
+     
 }
+
+@media (max-width: 520px) {
+  menu {
+    display: none; 
+  }
+}
+
+@media (max-width: 320px) {
+  .bio-button {
+    display: none; 
+  }
+
+  .bio-section {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .circle-container {
+    width: 20rem; 
+  }
+
+  .search-area {
+    height: 5rem; 
+    text-indent: 0; 
+    font-size: 12px; 
+  }
+
+  .search-boxes {
+    flex: 1;
+  }
+
+  .search-icons {
+    margin-left: 1rem; 
+  }
+}
+
