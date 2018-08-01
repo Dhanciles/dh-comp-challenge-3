@@ -103,9 +103,6 @@ body {
   margin-bottom: 1rem
 }
 
-.profile-header {
-}
-
 .header-icon {
   font-size: 16px; 
 }
@@ -273,13 +270,15 @@ menu {
   cursor: pointer;
   padding-left: 1.5rem; 
   margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 60rem;
+  min-width: 30rem; 
 }
 
 .menu-options {
   list-style: none; 
   border: none;
   cursor: pointer;
-  margin-right: 5rem;
   font-size: 12px;
   border-bottom: 2px solid transparent;
 }
@@ -288,13 +287,14 @@ menu {
   border-bottom: 2px solid #4FBDEE;
 }
 
- /* Grid for page's main content */
+  /* Grid for page's main content */
 
 main {
   background-color: #ECF2F6; 
 }
 
- /*Circular and bar graph section */
+  /*Circular and bar graph section */
+
 .graphs-container { 
   display: flex;
   flex-wrap: wrap; 
@@ -305,7 +305,6 @@ main {
   display: flex; 
   flex-direction: row; 
   margin-right: 0; 
-  /*width: 50%;*/
 }
 
 .grap-info-left {
@@ -390,7 +389,7 @@ main {
   flex-direction: row;
 }
 
-hr {
+.middle-line {
   font-size: 1rem;
   width: 90%;
 }
@@ -411,29 +410,56 @@ hr {
 }
 
 .job-description {
-  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%; 
+  margin-left: 3rem; 
+}
+
+.column {
+  display: flex;
+  flex-direction: row; 
+  border: 1px solid gray;
+  font-size: 10px;
+  align-items: center; 
+  height: 4rem; 
+}
+
+.table-header {
+  background-color: #707E94; 
+  color: #FFFFFF;
+  height: 4rem; 
+  padding: 1rem 1rem;
 }
 
 .job-icons {
   font-size: 12px;
 }
 
-table {
-  border-collapse: collapse;
-  background-color: #ffffff; 
+.edit-button {
+  background-color: #31475A;
+  color: #ffffff;
+  margin-left: 1rem;  
+  cursor: pointer;
+  border: none;  
 }
 
-td {
-  border: 2px solid gray;
-  border-left: none; 
-  border-right: none;
+.row-title {
+  width: 10rem;
+  color:  #607A99; 
   padding: 1rem 1rem;
 }
 
-thead {
-  background-color: #707E94; 
-  color: #FFFFFF;
+.table-img {
+  border-radius: 50% 50%;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background: url('images/pop.jpg') no-repeat center / cover ; 
 }
+
 
 /* Social media and links to share job information */
 
@@ -467,6 +493,7 @@ thead {
 .fa-twitter {
   margin-right: 2.5rem; 
 }
+
 .link-job-container input {
   flex-grow: 1;
 }
@@ -491,12 +518,18 @@ thead {
  /*Media Queries */
 
 @media screen and(max-width: 1100px) {
-  .graphs-container {
-      
-  }
+  
 }
 
-@media (max-width: 700px) {
-  .job-info-area {
-     
+@media (max-width: 650px) {
+  .sidebar {
+    display: none; 
+  }
+
+  .job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+       
 }
