@@ -133,10 +133,8 @@ header {
   flex-direction: row; 
   border-bottom: 2px solid #F4F3F4;
   background-color: #ffffff; 
-  background-image: #fff url('images/search.svg') no-repeat;
   height: 1.7rem;
   flex: 1 0;
-  margin: 0 1rem 1rem 1rem;
   outline: 0;
   min-width: 2rem;
   width: 100%;
@@ -148,7 +146,7 @@ header {
   display: flex;
   align-items: center;
   margin: 0;
-  width: 5rem; 
+  flex: 0.5; 
   cursor: pointer; 
 }
 
@@ -168,7 +166,10 @@ header {
 .search-input {
   width: 80%;
   text-indent: 2rem;
+  flex: 3;
   border: none; 
+  background: #ffffff url('images/search.svg') no-repeat center left ;
+
 }
 
 .left-fig {
@@ -267,6 +268,7 @@ h2 {
 menu {
   display: flex;
   flex-direction: row; 
+  justify-content: space-between;
   cursor: pointer;
   padding-left: 1.5rem; 
   margin-bottom: 1.5rem;
@@ -474,6 +476,7 @@ main {
 .social-buttons-conatainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .social-button {
@@ -494,8 +497,27 @@ main {
   margin-right: 2.5rem; 
 }
 
-.link-job-container input {
+.footer-box {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  height: 8rem;
+  padding: 1rem 0;
+}
+
+.footer-bottom {
+  border-bottom: 1px solid gray; 
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: row; 
+}
+
+.input-container input {
   flex-grow: 1;
+  height: 1.5rem; 
 }
 
 .copy-link {
