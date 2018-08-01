@@ -160,6 +160,8 @@ header {
   font-size: 16px; 
 }
 
+/* Search area containers */
+
 .search-boxes {
   display: flex;
   align-items: center;
@@ -169,6 +171,18 @@ header {
 
 .search-boxes:hover {
   background-color: #4FBDEE;
+}
+
+.left-fig {
+  border-right: 1px solid #F4F3F4;
+}
+
+.add-user-fig {
+  border-left: 1px solid #F4F3F4; 
+}
+.middle-fig {
+  border-left: 1px solid #F4F3F4; 
+  border-right: 1px solid #F4F3F4;
 }
 
 .search-icons:hover {
@@ -188,19 +202,6 @@ header {
   background: #ffffff url('images/search.svg') no-repeat center left ;
 
 }
-
-.left-fig {
-  border-right: 1px solid #F4F3F4;
-}
-
-.add-user-fig {
-  border-left: 1px solid #F4F3F4; 
-}
-.middle-fig {
-  border-left: 1px solid #F4F3F4; 
-  border-right: 1px solid #F4F3F4;
-}
-
 
  /* Bio section */
 
@@ -300,10 +301,13 @@ menu {
   cursor: pointer;
   font-size: 12px;
   border-bottom: 2px solid transparent;
+  color: #A5B6C3;
 }
 
 .menu-options:hover {
   border-bottom: 2px solid #4FBDEE;
+  color: #000000;
+  font-weight: bold; 
 }
 
   /* Grid for page's main content */
@@ -561,6 +565,14 @@ main {
       text-indent: 0.75rem; 
     }
  }
+
+@media (max-width: 1165px) {
+  menu {
+    padding: 0.75rem;
+    max-width: 45rem;
+    min-width: 15rem;  
+  }
+}
 
 @media (max-width: 825px) {
   .profile-header {
