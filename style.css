@@ -251,7 +251,6 @@ h2 {
   height: 40px;
   margin-left: 1rem;
   cursor: pointer; 
-
 }
 
 .bio-button {
@@ -633,7 +632,17 @@ main {
   menu {
     display: none; 
   }
+
+  .circle-container {
+    width: 20rem;
+  }
+
+  .bio-buttons button {
+    margin-left: 0.5rem;
+    height: 30px; 
+  }
 }
+
 
 @media (max-width: 320px) {
   .bio-button {
@@ -647,7 +656,11 @@ main {
   }
 
   .circle-container {
-    width: 20rem; 
+    width: 15rem; 
+  }
+
+  .bar-graph-container img {
+    width: 15rem; 
   }
 
   .search-area {
@@ -661,7 +674,7 @@ main {
   }
 
   .search-icons {
-    margin-left: 1rem; 
+    margin: 0 1rem; 
   }
 }
 
