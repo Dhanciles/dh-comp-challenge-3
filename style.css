@@ -208,7 +208,6 @@ header {
 .bio-section {
   display: flex;
   justify-content: space-between;
-  /*flex-direction: column;*/ 
   padding: 20px;
   background-color: #ffffff; 
 }
@@ -340,11 +339,18 @@ main {
 
 .graph-summary {
   display: flex;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   padding: 10px;
   border-radius: 20px;
   background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.graph-summary:hover {
+  color: #33A3CD;
+  background-color: #607A99;  
 }
 
 .circle-container {
@@ -379,15 +385,15 @@ main {
 }
 
 .circular-chart.orange .circle {
-  stroke: #ff9f00;
+  stroke: #1FB7C0;
 }
 
 .circular-chart.green .circle {
-  stroke: #4CC790;
+  stroke: #53C289;
 }
 
 .circular-chart.blue .circle {
-  stroke: #3c9ee5;
+  stroke: #AA6AA6;
 }
 
 .percentage {
@@ -396,8 +402,6 @@ main {
   font-size: 0.5em;
   text-anchor: middle;
 }
-
-
 
 .bar-graph-container img {
   width: 20rem; 
