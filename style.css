@@ -25,7 +25,7 @@ body {
   width: 100%;
 }
 
-/* Navigation side bar */
+/*  Aside bar styling */
 
 .sidebar {
   width: 15rem; 
@@ -51,6 +51,8 @@ body {
 
 .sidebar section ul li:hover {
   color: #ffffff; 
+  background-color: #3080e8;
+  border-left: 2px solid #9cc2f4; 
 }
 
 .nav-icons:hover {
@@ -63,10 +65,55 @@ body {
   margin-bottom: 10px;
 }
 
+.sidebar-main {
+  border-bottom: 1px solid #2e294a;
+}
+
+.sidebar-admin {
+  border-bottom: 1px solid #2e294a;
+}
+
+/* Profile picture box styling */
+
+.profile-picture {
+  border-bottom: 1px solid #2e394a;
+  margin-top: 30px; 
+  color: #A5B6C3; 
+}
+
+.profile-image {
+  background-image: url('images/derek-shadow.gif');
+  background-size: cover; 
+  border: none;
+  border-radius: 50% 50%;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 2rem; 
+  margin-bottom: 1rem; 
+  cursor: pointer;
+}
+
+.profile-header {
+  margin-left: 10px;
+  cursor: pointer;  
+}
+
+.header-icon {
+  font-size: 16px; 
+}
+
+.header-icon:hover {
+  font-size: 20px
+}
+
+
+/* Aisde bar icon styling */
+
 .nav-icons {
   font-size: 12px; 
   color: #A5B6C3; 
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .box1 {
@@ -84,35 +131,6 @@ body {
 
 .box4 {
   color: green;
-}
-
-.profile-picture {
-  border-bottom: 1px solid #2e394a;
-  margin-top: 30px; 
-  color: #A5B6C3; 
-}
-
-.profile-image {
-  background-image: url('images/derek-shadow.gif');
-  background-size: cover; 
-  border: none;
-  border-radius: 50% 50%;
-  height: 5rem;
-  width: 5rem;
-  margin-left: 2rem; 
-  margin-bottom: 1rem
-}
-
-.header-icon {
-  font-size: 16px; 
-}
-
-.sidebar-main {
-  border-bottom: 1px solid #2e294a;
-}
-
-.sidebar-admin {
-  border-bottom: 1px solid #2e294a;
 }
 
 /* Search area */
